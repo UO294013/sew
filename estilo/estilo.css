@@ -1,3 +1,43 @@
 /* Vicente Megido García - UO294013 */
 
 /* Archivo de estilos generales CSS para la aplicación MotoGP - Desktop */
+
+/* Paleta de colores general:
+   - #FA9A09 (naranja)
+   - #0910A0 (azul oscuro)
+   - #FFFFFF (blanco)
+   - #000000 (negro)
+   Enlaces del header (elementos <a>, contraste con #0910A0)
+   :visited { color: #EEEEEE; } (gris claro)
+   :hover { color: #FFFFBB; } (amarillo claro)
+   :active { color: #FFDDFF; } (rosa claro)
+*/
+
+/* Especificidad del selector: 001 */
+body {
+    font-family: "Verdana", "Futura", sans-serif;
+    font-size: 1em;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+/* Especificidad del selector: 001 */
+header {
+    background-color: #0910A0;
+    color: #FFFFFF;
+}
+
+/* Especificidad del selector: 012 */
+header a:visited {
+    color: #EEEEEE;
+}
+
+/* Especificidad del selector: 012 */
+header a:hover {
+    color: #FFFFBB;
+}
+
+/* Especificidad del selector: 012 */
+header a:active {
+    color: #FFDDFF;
+}
