@@ -29,15 +29,15 @@ header {
 
 /* Especificidad del selector: 012 */
 header a:visited {
-    color: #EEEEEE;
+    color: #EEEEEE; /* Advertencia controlada: Color de fondo heredado de <header> */
 }
 
 /* Especificidad del selector: 012 */
 header a:hover {
-    color: #FFFFBB;
+    color: #FFFFBB; /* Advertencia controlada: Color de fondo heredado de <header> */
 }
 
 /* Especificidad del selector: 012 */
 header a:active {
-    color: #FFDDFF;
+    color: #FFDDFF; /* Advertencia controlada: Color de fondo heredado de <header> */
 }
