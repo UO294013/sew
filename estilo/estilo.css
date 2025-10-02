@@ -3,14 +3,18 @@
 /* Archivo de estilos generales CSS para la aplicación MotoGP - Desktop */
 
 /* Paleta de colores general:
-   - #FA9A09 (naranja)
+   - #FFFD83 (amarillo claro)
    - #0910A0 (azul oscuro)
    - #FFFFFF (blanco)
    - #000000 (negro)
    Enlaces del header (elementos <a>, contraste con #0910A0)
    :visited { color: #EEEEEE; } (gris claro)
    :hover { color: #FFFFBB; } (amarillo claro)
-   :active { color: #FFDDFF; } (rosa claro)
+   :active y :focus { color: #FFDDFF; } (rosa claro)
+   Enlaces del body (contraste con #FFFFFF)
+   a:visited { color: #0000AA; } (azul oscuro)
+   a:hover { color: #004400; } (verde oscuro)
+   a:active y a:focus { color: #550000; } (rojo oscuro)
 */
 
 /* Especificidad del selector: 001 */
@@ -27,6 +31,11 @@ header {
     color: #FFFFFF;
 }
 
+/* Especificidad del selector: 002 */
+header a {
+    color: #FFFFFF; /* Advertencia controlada: Color de fondo heredado de <header> */
+}
+
 /* Especificidad del selector: 012 */
 header a:visited {
     color: #EEEEEE; /* Advertencia controlada: Color de fondo heredado de <header> */
@@ -37,7 +46,85 @@ header a:hover {
     color: #FFFFBB; /* Advertencia controlada: Color de fondo heredado de <header> */
 }
 
-/* Especificidad del selector: 012 */
-header a:active {
+/* Especificidad del selector: 012 | 012 */
+header a:active, header a:focus {
     color: #FFDDFF; /* Advertencia controlada: Color de fondo heredado de <header> */
+}
+
+/* Especificidad del selector: 010 */
+.active {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Especificidad del selector: 002 */
+header + p {
+    font-size: 0.8em;
+}
+
+/* Especificidad del selector: 001 */
+a {
+    text-decoration: none;
+}
+
+/* Especificidad del selector: 011 */
+a:visited {
+    color: #0000AA; /* Advertencia controlada: Color de fondo heredado de <header> */
+}
+
+/* Especificidad del selector: 011 */
+a:hover {
+    color: #004400; /* Advertencia controlada: Color de fondo heredado de <header> */
+}
+
+/* Especificidad del selector: 011 | 011 */
+a:active, a:focus {
+    color: #550000; /* Advertencia controlada: Color de fondo heredado de <header> */
+}
+
+/* Especificidad del selector: 001 | 001*/
+img, video {
+    box-shadow: 0 0.5em 0.5em #777777;
+}
+
+/* Especificidad del selector: 001 */
+dl {
+    background-color: #FFFD83;
+    border-radius: 0.5em;
+    border: #000000 0.2em solid;
+}
+
+/* Especificidad del selector: 001 */
+dt {
+    font-weight: bold;
+}
+
+/* Especificidad del selector: 001 */
+table {
+    border: 0.1em solid #000000;
+}
+
+/* Especificidad del selector: 001 */
+caption {
+    font-weight: bold;
+    background-color: #0910A0;
+    color: #FFFFFF;
+}
+
+/* Especificidad del selector: 001 | 001 | 001 */
+th, td, tr {
+    border: 0.1em solid #000000;
+    background-color: #FFFD83;
+}
+
+/* Especificidad del selector: 011 / 011 */
+td:hover, tr:hover {
+    background-color: #FFFFFF;
+}
+
+/* Especificidad del selector: 001 */
+footer {
+    background-color: #0910A0;
+    color: #FFFFFF;
+    border-radius: 0.8em;
 }
