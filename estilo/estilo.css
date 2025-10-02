@@ -89,7 +89,7 @@ img, video {
 
 /* Especificidad del selector: 001 */
 dl {
-    background-color: #FFFD83;
+    background-color: #FFFD83; /* Advertencia controlada: Color heredado de <body> */
     border-radius: 0.5em;
     border: #000000 0.2em solid;
 }
@@ -114,12 +114,12 @@ caption {
 /* Especificidad del selector: 001 | 001 | 001 */
 th, td, tr {
     border: 0.1em solid #000000;
-    background-color: #FFFD83;
+    background-color: #FFFD83; /* Advertencia controlada: Color heredado de <body> */
 }
 
-/* Especificidad del selector: 011 / 011 */
-td:hover, tr:hover {
-    background-color: #FFFFFF;
+/* Especificidad del selector: 011 */
+td:hover {
+    background-color: #FFFFFF; /* Advertencia controlada: Color heredado de <body> */
 }
 
 /* Especificidad del selector: 001 */

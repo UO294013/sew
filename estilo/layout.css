@@ -17,7 +17,7 @@ header {
 /* Especificidad del selector: 002 */
 header h1 {
     flex: 1;
-    margin: 2%;
+    margin: 1%;
 }
 
 /* Especificidad del selector: 001 */
@@ -97,7 +97,7 @@ dd {
     padding: 0.2em;
 }
 
-/* Especifidad del selector: 001 */
+/* Especificidad del selector: 001 */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -120,7 +120,7 @@ footer {
 /* Media queries aplicadas: Distribución de contenidos (flex-direction: column en el header), dimensionado, y supresión de migas (en móviles) */
 
 /* Escritorio y portátiles L (> 1025px) */
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
     
     /* Especificidad del selector: 001 | 002 */
     video, audio {
@@ -130,31 +130,26 @@ footer {
 }
 
 /* Portátil (1024px) */
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
 
 }
 
 /* Tablet (768px) */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     /* Especificidad del selector: 001 */
     header {
-        flex-direction: column; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+        flex-direction: column; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad de la web */
         align-items: center;
         padding: 1em 0;
-    }
-
-    /* Especificidad del selector: 002 */
-    header h1 {
-        margin: 1%; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
     }
 
     /* Especificidad del selector: 002 */
     header nav {
         flex-direction: column;
         width: 100%;
-        justify-content: center; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
-        flex-wrap: wrap; /* Advertencia controlada: Redefinición de propiedad para preservar la adaptabilidad */
+        justify-content: center;
+        flex-wrap: wrap;
         margin-top: 0.5em;
         padding: 1em;
     } 
@@ -166,6 +161,6 @@ footer {
 }
 
 /* Movil L (425px) */
-@media screen and (max-width: 425px) {
+@media (max-width: 425px) {
 
 }
