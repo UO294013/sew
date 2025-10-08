@@ -129,7 +129,7 @@ footer {
     }
 
     /* Especificidad del selector: 001 */
-    video {
+    audio {
         width: 100%;
     }
 }
