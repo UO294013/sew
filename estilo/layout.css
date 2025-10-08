@@ -122,10 +122,15 @@ footer {
 /* Escritorio y portátiles L (> 1025px) */
 @media (min-width: 1025px) {
     
-    /* Especificidad del selector: 001 | 002 */
-    video, audio {
-        width: 100%;
+    /* Especificidad del selector: 001 */
+    video {
+        width: 80%;
         height: auto;
+    }
+
+    /* Especificidad del selector: 001 */
+    video {
+        width: 80%;
     }
 }
 
