@@ -124,13 +124,13 @@ footer {
     
     /* Especificidad del selector: 001 */
     video {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 
     /* Especificidad del selector: 001 */
     video {
-        width: 80%;
+        width: 100%;
     }
 }
 
