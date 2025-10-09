@@ -1,4 +1,3 @@
-<!ELEMENT circuitos (circuito+)>
 <!ELEMENT circuito (longitud, anchura_media, fecha_2025, hora_carrera_españa, patrocinador, referencias, fotos, videos, coordenadas_inicio, tramos, vencedor, clasificacion_mundial)>
 <!ELEMENT longitud (#PCDATA)>
 <!ELEMENT anchura_media (#PCDATA)>

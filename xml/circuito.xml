@@ -1,55 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE circuitos SYSTEM "circuito.dtd">
-<circuitos>
-    <circuito nombre="Le Mans" vueltas="27" localidad_proxima="Le Mans" pais="Francia">
-        <longitud unidad="metros">4187</longitud>
-        <anchura_media unidad="metros">13</anchura_media>
-        <fecha_2025>2025-05-11</fecha_2025>
-        <hora_carrera_españa>14:00</hora_carrera_españa>
-        <patrocinador>Michelin</patrocinador>
-            <referencias>
-                <referencia>https://www.motogp.com/es/calendar/2025/event/france/e9b386c5-9d95-405e-880e-7d9105ce1cbe?tab=overview</referencia>
-                <referencia>https://es.wikipedia.org/wiki/Gran_Premio_de_Francia_de_Motociclismo</referencia>
-                <referencia>https://www.dazn.com/es-ES/news/motor/circuito-le-mans-donde-esta-como-es-caracteristicas-como-llegar-fotos-escenario-gp-francia-mundial-motogp/1ds4qyf2z4y5wz5uatyt4s8lh</referencia>
-                <referencia>https://es.motorsport.com/motogp/news/mundiales-motogp-2025-puntos-posiciones-francia/10721575/</referencia>
-            </referencias>
-            <fotos>
-                <foto>../multimedia/lemans_aereo.jpg</foto>
-                <foto>../multimedia/lemans_meta.jpg</foto>
-                <foto>../multimedia/lemans_tramos.jpg</foto>
-            </fotos>
-            <videos>
-                <video>../multimedia/lemans.mp4</video>
-            </videos>
-            <coordenadas_inicio>
-                <coordenada longitud="0.206696" latitud="47.951648" altitud="55.45 metros"/>
-            </coordenadas_inicio>
-            <tramos>
-                <tramo sector="1"> <!-- Distancia desde tramo anterior. En la primera coordenada, desde la línea de meta -->
-                    <distancia unidad="metros">10</distancia>
-                    <coordenada longitud="0.20750" latitud="47.9525" altitud="57.88 metros"/>
-                </tramo>
-                <tramo sector="1"> 
-                    <distancia unidad="metros">20</distancia>
-                    <coordenada longitud="0.20750" latitud="47.9533333" altitud="58.38 metros"/>
-                </tramo>
-                <tramo sector="1"> 
-                    <distancia unidad="metros">20</distancia>
-                    <coordenada longitud="0.20806" latitud="47.9541667" altitud="61.29 metros"/>
-                </tramo>
-                <tramo sector="1"> 
-                    <distancia unidad="metros">20</distancia>
-                    <coordenada longitud="0.20833" latitud="47.9547222" altitud="63.78 metros"/>
-                </tramo>
-            </tramos>
-            <vencedor>
-                <piloto>Johann Zarco</piloto>
-                <tiempo>1:30.123</tiempo>
-            </vencedor>
-            <clasificacion_mundial>
-                <piloto>1. Marc Márquez - 171 puntos</piloto>
-                <piloto>2. Alex Márquez - 149 puntos</piloto>
-                <piloto>3. Pecco Bagnaia - 120 puntos</piloto>
-            </clasificacion_mundial>
-    </circuito>
-</circuitos>
+<!DOCTYPE circuito SYSTEM "circuito.dtd">
+<circuito nombre="Le Mans" vueltas="27" localidad_proxima="Le Mans" pais="Francia">
+    <longitud unidad="metros">4187</longitud>
+    <anchura_media unidad="metros">13</anchura_media>
+    <fecha_2025>2025-05-11</fecha_2025>
+    <hora_carrera_españa>14:00</hora_carrera_españa>
+    <patrocinador>Michelin</patrocinador>
+        <referencias>
+            <referencia>https://www.motogp.com/es/calendar/2025/event/france/e9b386c5-9d95-405e-880e-7d9105ce1cbe?tab=overview</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Gran_Premio_de_Francia_de_Motociclismo</referencia>
+            <referencia>https://www.dazn.com/es-ES/news/motor/circuito-le-mans-donde-esta-como-es-caracteristicas-como-llegar-fotos-escenario-gp-francia-mundial-motogp/1ds4qyf2z4y5wz5uatyt4s8lh</referencia>
+            <referencia>https://es.motorsport.com/motogp/news/mundiales-motogp-2025-puntos-posiciones-francia/10721575/</referencia>
+        </referencias>
+        <fotos>
+            <foto>../multimedia/lemans_aereo.jpg</foto>
+            <foto>../multimedia/lemans_meta.jpg</foto>
+            <foto>../multimedia/lemans_tramos.jpg</foto>
+        </fotos>
+        <videos>
+            <video>../multimedia/lemans.mp4</video>
+            <video>../multimedia/zarco.mp4</video>
+        </videos>
+        <coordenadas_inicio>
+            <coordenada longitud="0.2075998" latitud="47.9511720" altitud="53.68"/>
+        </coordenadas_inicio>
+        <tramos> <!-- La distancia se mide desde tramo (coordenada) anterior. En la primera coordenada se mide desde la línea de meta (coordenada_inicial) -->
+            <tramo sector="1"> <!-- P1 -->
+                <distancia unidad="metros">175.47</distancia>
+                <coordenada longitud="0.2076845" latitud="47.9527561" altitud="56.06"/>
+            </tramo>
+            <tramo sector="1"> <!-- P2 -->
+                <distancia unidad="metros">65.57</distancia>
+                <coordenada longitud="0.2077719" latitud="47.9533405" altitud="57.30"/>
+            </tramo>
+            <tramo sector="1"> <!-- P3 -->
+                <distancia unidad="metros">115.61</distancia>
+                <coordenada longitud="0.2081108" latitud="47.9543599" altitud="60.72"/>
+            </tramo>
+            <tramo sector="1"> <!-- P4 -->
+                <distancia unidad="metros">67.97</distancia>
+                <coordenada longitud="0.2084193" latitud="47.9549459" altitud="63.52"/>
+            </tramo>
+            <tramo sector="1"> <!-- P5 -->
+                <distancia unidad="metros">52.08</distancia>
+                <coordenada longitud="0.2087131" latitud="47.9553673" altitud="65.77"></coordenada>
+            </tramo>
+            <tramo sector="1"> <!-- P6 -->
+                <distancia unidad="metros">50.94</distancia>
+                <coordenada longitud="0.2091662" latitud="47.9557153" altitud="67.95"></coordenada>
+            </tramo>
+            <tramo sector="1"> <!-- P7 -->
+                <distancia unidad="metros">156.17</distancia>
+                <coordenada longitud="0.2109462" latitud="47.9564535" altitud="74.30"></coordenada>
+            </tramo>
+            <tramo sector="1"> <!-- P8 -->
+                <distancia unidad="metros">21.83</distancia>
+                <coordenada longitud="0.2110410" latitud="47.9566379" altitud="75.52"></coordenada>
+            </tramo>
+            <tramo sector="1"> <!-- P9 -->
+                <distancia unidad="metros">46</distancia>
+                <coordenada longitud="0.2109203" latitud="47.9570365" altitud="78.24"></coordenada>
+            </tramo>
+            <tramo sector="1"> <!-- P10 -->
+                <distancia unidad="metros">22.87</distancia>
+                <coordenada longitud="0.2110802" latitud="47.9572076" altitud="79.12"></coordenada>
+            </tramo>
+            <tramo sector="1"> <!-- P11 -->
+                <distancia unidad="metros">165.75</distancia>
+                <coordenada longitud="0.2129530" latitud="47.9580023" altitud="80.85"></coordenada>
+            </tramo>
+            <tramo sector="1"> <!-- P12 -->
+                <distancia unidad="metros">38.85</distancia>
+                <coordenada longitud="0.2133147" latitud="47.9582415" altitud="79.89"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P13 -->
+                <distancia unidad="metros">70.80</distancia>
+                <coordenada longitud="0.2138827" latitud="47.9587447" altitud="76.87"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P14 -->
+                <distancia unidad="metros">55.84</distancia>
+                <coordenada longitud="0.2144339" latitud="47.9590757" altitud="73.21"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P15 -->
+                <distancia unidad="metros">37.64</distancia>
+                <coordenada longitud="0.2149427" latitud="47.9591195" altitud="70.58"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P16 -->
+                <distancia unidad="metros">46.49</distancia>
+                <coordenada longitud="0.2155021" latitud="47.9589275" altitud="68.33"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P17 -->
+                <distancia unidad="metros">43.94</distancia>
+                <coordenada longitud="0.2156786" latitud="47.9585480" altitud="67.67"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P18 -->
+                <distancia unidad="metros">42.20</distancia>
+                <coordenada longitud="0.2154957" latitud="47.9581805" altitud="68.70"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P19 -->
+                <distancia unidad="metros">89.08</distancia>
+                <coordenada longitud="0.2147220" latitud="47.9575653" altitud="71.58"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P20 -->
+                <distancia unidad="metros">179.50</distancia>
+                <coordenada longitud="0.2128730" latitud="47.9565480" altitud="72.14"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P21 -->
+                <distancia unidad="metros">49.45</distancia>
+                <coordenada longitud="0.2124487" latitud="47.9562141" altitud="71.23"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P22 -->
+                <distancia unidad="metros">31.62</distancia>
+                <coordenada longitud="0.2124465" latitud="47.9559397" altitud="70.37"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P23 -->
+                <distancia unidad="metros">36.04</distancia>
+                <coordenada longitud="0.2127516" latitud="47.9556941" altitud="69.41"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P24 -->
+                <distancia unidad="metros">57.60</distancia>
+                <coordenada longitud="0.2135153" latitud="47.9557001" altitud="68.03"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P25 -->
+                <distancia unidad="metros">57.70</distancia>
+                <coordenada longitud="0.2142224" latitud="47.9559049" altitud="67.04"></coordenada>
+            </tramo>
+            <tramo sector="2"> <!-- P26 -->
+                <distancia unidad="metros">87.55</distancia>
+                <coordenada longitud="0.2150853" latitud="47.9564443" altitud="65.66"></coordenada>
+            </tramo>
+            <tramo sector="3"> <!-- P27 -->
+                <distancia unidad="metros">287.69</distancia>
+                <coordenada longitud="0.2176991" latitud="47.9583409" altitud="60.92"></coordenada>
+            </tramo>
+            <tramo sector="3"> <!-- P28 -->
+                <distancia unidad="metros">24.72</distancia>
+                <coordenada longitud="0.2180333" latitud="47.9583712" altitud="59.99"></coordenada>
+            </tramo>
+            <tramo sector="3"> <!-- P29 -->
+                <distancia unidad="metros">52.01</distancia>
+                <coordenada longitud="0.2185225" latitud="47.9580345" altitud="57.89"></coordenada>
+            </tramo>
+            <tramo sector="3"> <!-- P30 -->
+                <distancia unidad="metros">23.77</distancia>
+                <coordenada longitud="0.2184565" latitud="47.9578476" altitud="57.34"></coordenada>
+            </tramo>
+            <tramo sector="3"> <!-- P31 -->
+                <distancia unidad="metros">682.08</distancia>
+                <coordenada longitud="0.2126455" latitud="47.9531104" altitud="53.08"></coordenada>
+            </tramo>
+            <tramo sector="3"> <!-- P32 -->
+                <distancia unidad="metros">30.85</distancia>
+                <coordenada longitud="0.2125608" latitud="47.9528367" altitud="52.54"></coordenada>
+            </tramo>
+            <tramo sector="3"> <!-- P33 -->
+                <distancia unidad="metros">26.21</distancia>
+                <coordenada longitud="0.2127118" latitud="47.9526138" altitud="52.26"></coordenada>
+            </tramo>
+            <tramo sector="3"> <!-- P34 -->
+                <distancia unidad="metros">33.82</distancia>
+                <coordenada longitud="0.2129511" latitud="47.9523563" altitud="51.78"></coordenada>
+            </tramo>
+            <tramo sector="3"> <!-- P35 -->
+                <distancia unidad="metros">52.48</distancia>
+                <coordenada longitud="0.2128790" latitud="47.9518758" altitud="49.84"></coordenada>
+            </tramo>
+            <tramo sector="3"> <!-- P36 -->
+                <distancia unidad="metros">260.29</distancia>
+                <coordenada longitud="0.2118733" latitud="47.9496461" altitud="49.23"></coordenada>
+            </tramo>
+            <tramo sector="4"> <!-- P37 -->
+                <distancia unidad="metros">25.17</distancia>
+                <coordenada longitud="0.2116494" latitud="47.9494636" altitud="49.53"></coordenada>
+            </tramo>
+            <tramo sector="4"> <!-- P38 -->
+                <distancia unidad="metros">35.41</distancia>
+                <coordenada longitud="0.2111990" latitud="47.9493958" altitud="49.53"></coordenada>
+            </tramo>
+            <tramo sector="4"> <!-- P39 -->
+                <distancia unidad="metros">54.85</distancia>
+                <coordenada longitud="0.2105556" latitud="47.9496280" altitud="49.77"></coordenada>
+            </tramo>
+            <tramo sector="4"> <!-- P40 -->
+                <distancia unidad="metros">48.83</distancia>
+                <coordenada longitud="0.2100207" latitud="47.9498725" altitud="50.59"></coordenada>
+            </tramo>
+            <tramo sector="4"> <!-- P41 -->
+                <distancia unidad="metros">43.62</distancia>
+                <coordenada longitud="0.2094431" latitud="47.9498136" altitud="50.88"></coordenada>
+            </tramo>
+            <tramo sector="4"> <!-- P42 -->
+                <distancia unidad="metros">40.38</distancia>
+                <coordenada longitud="0.2091030" latitud="47.9495454" altitud="50.58"></coordenada>
+            </tramo>
+            <tramo sector="4"> <!-- P43 -->
+                <distancia unidad="metros">166.47</distancia>
+                <coordenada longitud="0.2084944" latitud="47.9481134" altitud="50.05"></coordenada>
+            </tramo>
+            <tramo sector="4"> <!-- P44 -->
+                <distancia unidad="metros">16.40</distancia>
+                <coordenada longitud="0.2083013" latitud="47.9480612" altitud="50.10"></coordenada>
+            </tramo>
+            <tramo sector="4"> <!-- P45 -->
+                <distancia unidad="metros">60.39</distancia>
+                <coordenada longitud="0.2075209" latitud="47.9482101" altitud="50.47"></coordenada>
+            </tramo>
+            <tramo sector="4"> <!-- P46 -->
+                <distancia unidad="metros">15.79</distancia>
+                <coordenada longitud="0.2074574" latitud="47.9483379" altitud="50.58"></coordenada>
+            </tramo>
+            <tramo sector="4"> <!-- P47 -->
+                <distancia unidad="metros">229.94</distancia>
+                <coordenada longitud="0.2075674" latitud="47.9503853" altitud="52.60"></coordenada>
+            </tramo>
+            <tramo sector="4"> <!-- P48 == coordenadas_inicio (meta) -->
+                <distancia unidad="metros">90.01</distancia>
+                <coordenada longitud="0.2075998" latitud="47.9511720" altitud="53.68"/>
+            </tramo>
+        </tramos>
+        <vencedor>
+            <piloto>Johann Zarco</piloto>
+            <tiempo>1:30.123</tiempo>
+        </vencedor>
+        <clasificacion_mundial>
+            <piloto>1. Marc Márquez - 171 puntos</piloto>
+            <piloto>2. Alex Márquez - 149 puntos</piloto>
+            <piloto>3. Pecco Bagnaia - 120 puntos</piloto>
+        </clasificacion_mundial>
+</circuito>
