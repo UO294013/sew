@@ -13,13 +13,13 @@
             <referencia>https://es.motorsport.com/motogp/news/mundiales-motogp-2025-puntos-posiciones-francia/10721575/</referencia>
         </referencias>
         <fotos>
-            <foto>../multimedia/lemans_aereo.jpg</foto>
-            <foto>../multimedia/lemans_meta.jpg</foto>
-            <foto>../multimedia/lemans_tramos.jpg</foto>
+            <foto>multimedia/lemans_aereo.jpg</foto>
+            <foto>multimedia/lemans_meta.jpg</foto>
+            <foto>multimedia/lemans_tramos.jpg</foto>
         </fotos>
         <videos>
-            <video>../multimedia/lemans.mp4</video>
-            <video>../multimedia/zarco.mp4</video>
+            <video>multimedia/lemans.mp4</video>
+            <video>multimedia/zarco.mp4</video>
         </videos>
         <coordenadas_inicio>
             <coordenada longitud="0.2075998" latitud="47.9511720" altitud="53.68"/>
