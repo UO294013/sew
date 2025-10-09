@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuitos SYSTEM "circuito.dtd">
+<circuitos>
+    <circuito nombre="Le Mans" vueltas="27" localidad_proxima="Le Mans" pais="Francia">
+        <longitud unidad="metros">4187</longitud>
+        <anchura_media unidad="metros">13</anchura_media>
+        <fecha_2025>2025-05-11</fecha_2025>
+        <hora_carrera_españa>14:00</hora_carrera_españa>
+        <patrocinador>Michelin</patrocinador>
+            <referencias>
+                <referencia>https://www.motogp.com/es/calendar/2025/event/france/e9b386c5-9d95-405e-880e-7d9105ce1cbe?tab=overview</referencia>
+                <referencia>https://es.wikipedia.org/wiki/Gran_Premio_de_Francia_de_Motociclismo</referencia>
+                <referencia>https://www.dazn.com/es-ES/news/motor/circuito-le-mans-donde-esta-como-es-caracteristicas-como-llegar-fotos-escenario-gp-francia-mundial-motogp/1ds4qyf2z4y5wz5uatyt4s8lh</referencia>
+                <referencia>https://es.motorsport.com/motogp/news/mundiales-motogp-2025-puntos-posiciones-francia/10721575/</referencia>
+            </referencias>
+            <fotos>
+                <foto>../multimedia/lemans_aereo.jpg</foto>
+                <foto>../multimedia/lemans_meta.jpg</foto>
+                <foto>../multimedia/lemans_tramos.jpg</foto>
+            </fotos>
+            <videos>
+                <video>../multimedia/lemans.mp4</video>
+            </videos>
+            <coordenadas_inicio>
+                <coordenada longitud="0.206696" latitud="47.951648" altitud="55.45 metros"/>
+            </coordenadas_inicio>
+            <tramos>
+                <tramo sector="1"> <!-- Distancia desde tramo anterior. En la primera coordenada, desde la línea de meta -->
+                    <distancia unidad="metros">10</distancia>
+                    <coordenada longitud="0.20750" latitud="47.9525" altitud="57.88 metros"/>
+                </tramo>
+                <tramo sector="1"> 
+                    <distancia unidad="metros">20</distancia>
+                    <coordenada longitud="0.20750" latitud="47.9533333" altitud="58.38 metros"/>
+                </tramo>
+                <tramo sector="1"> 
+                    <distancia unidad="metros">20</distancia>
+                    <coordenada longitud="0.20806" latitud="47.9541667" altitud="61.29 metros"/>
+                </tramo>
+                <tramo sector="1"> 
+                    <distancia unidad="metros">20</distancia>
+                    <coordenada longitud="0.20833" latitud="47.9547222" altitud="63.78 metros"/>
+                </tramo>
+            </tramos>
+            <vencedor>
+                <piloto>Johann Zarco</piloto>
+                <tiempo>1:30.123</tiempo>
+            </vencedor>
+            <clasificacion_mundial>
+                <piloto>1. Marc Márquez - 171 puntos</piloto>
+                <piloto>2. Alex Márquez - 149 puntos</piloto>
+                <piloto>3. Pecco Bagnaia - 120 puntos</piloto>
+            </clasificacion_mundial>
+    </circuito>
+</circuitos>
