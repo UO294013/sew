@@ -1,5 +1,5 @@
-<!ELEMENT circuito (longitud, anchura_media, fecha_2025, hora_carrera_españa, patrocinador, referencias, fotos, videos, coordenadas_inicio, tramos, vencedor, clasificacion_mundial)>
-<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT circuito (longitud_circuito, anchura_media, fecha_2025, hora_carrera_españa, patrocinador, referencias, fotos, videos, coordenadas_inicio, tramos, vencedor, clasificacion_mundial)>
+<!ELEMENT longitud_circuito (#PCDATA)>
 <!ELEMENT anchura_media (#PCDATA)>
 <!ELEMENT fecha_2025 (#PCDATA)>
 <!ELEMENT hora_carrera_españa (#PCDATA)>
@@ -11,7 +11,10 @@
 <!ELEMENT videos (video+)>
 <!ELEMENT video (#PCDATA)>
 <!ELEMENT coordenadas_inicio (coordenada)>
-<!ELEMENT coordenada (#PCDATA)>
+<!ELEMENT coordenada (longitud, latitud,altitud)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT altitud (#PCDATA)>
 <!ELEMENT tramos (tramo+)>
 <!ELEMENT tramo (distancia, coordenada)>
 <!ELEMENT distancia (#PCDATA)>
@@ -29,7 +32,7 @@
 	pais CDATA #REQUIRED
 >
 
-<!ATTLIST longitud
+<!ATTLIST longitud_circuito
     unidad CDATA #REQUIRED
 >
 
@@ -37,16 +40,14 @@
     unidad CDATA #REQUIRED
 >
 
-<!ATTLIST coordenada 
-	longitud CDATA #REQUIRED
-    latitud CDATA #REQUIRED
-    altitud CDATA #REQUIRED
->
-
 <!ATTLIST tramo 
     sector CDATA #REQUIRED
 >
 
 <!ATTLIST distancia
+    unidad CDATA #REQUIRED
+>
+
+<!ATTLIST altitud
     unidad CDATA #REQUIRED
 >
