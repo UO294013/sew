@@ -1,0 +1,16 @@
+/* Vicente Megido García - UO294013 */
+
+/* Archivo de estilos para el layout del juego de cartas de MotoGP - Desktop */
+
+/* Especificidad del selector: 001 */
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1em; /* Probar más valores */
+}
+
+/* Especificidad del selector: 001 */
+main h2 {
+    text-align: center;
+}
