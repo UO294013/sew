@@ -50,3 +50,22 @@ article h3 {
 article img {
     transform: rotateY(180deg);
 }
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+
+    /* Especificidad del selector: 002 */
+    main article {
+        width: 35vw;
+        height: 18em;
+    }
+}
+
+/* Movil L (425px) */
+@media (max-width: 425px) {
+
+    /* Especificidad del selector: 002 */
+    main article {
+        height: 12em;
+    }
+}
