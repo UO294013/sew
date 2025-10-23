@@ -12,6 +12,8 @@ main article {
     transform-style: preserve-3d;
     transition: transform .5s;
     box-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,.3);
+    margin: auto; /* Para centrar las cartas */
+    color: #FFFFFF;
 }
 
 /* Regla con la transformación que permite girar la carta cuando se le pone el data-state al valor flip */
@@ -29,7 +31,7 @@ article img {
     height: 100%;
     position: absolute;
     border-radius: 0.5em;
-    background: #1C7CCC;
+    background: #0910A0;
     backface-visibility: hidden;
 }
 

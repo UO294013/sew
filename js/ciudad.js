@@ -29,7 +29,6 @@ class Ciudad {
     }
 
     getCoordenadas() {
-        document.write("<p>Latitud: " + this.coordenadas.latitud + "</p>"); /* Marcado como "deprecated" */
-        document.write("<p>Longitud: " + this.coordenadas.longitud + "</p>");
+        document.write("<p>Coordenadas: { Latitud: " + this.coordenadas.latitud + ", Longitud: " + this.coordenadas.longitud + " }</p>");
     }
 }

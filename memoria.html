@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Vicente Megido García (UO294013)" />
+    <meta name="description" content="Juego de memoria con cartas con los logos de las escuderías de MotoGP 2025 para la web MotoGP - Desktop" />
+    <meta name="keywords" content="MotoGP, aplicación, carreras, motos, juego, memoria, cartas, logos" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MotoGP - Juego de memoria</title>
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/cards.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout-cards.css" />
+    <script src="js/memoria.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html" title="Página principal">MotoGP Desktop</a></h1>
+        <nav>
+            <a href="index.html" title="Página de inicio">Inicio</a>
+            <a href="piloto.html" title="Información del piloto Fermín Aldeguer">Piloto</a>
+            <a href="circuito.html" title="Información del circuito de Le Mans">Circuito</a>
+            <a href="meteorologia.html" title="Información meteorológica">Meteorología</a>
+            <a href="clasificaciones.html" title="Página de clasificaciones">Clasificaciones</a>
+            <a href="juegos.html" title="Página de juegos" class="active">Juegos</a>
+            <a href="ayuda.html" title="Página de ayuda">Ayuda</a>
+        </nav>
+    </header>
+    <p>Estás en: <a href="index.html" title="Página de inicio">Inicio</a> >> <a href="juegos.html" title="Página de juegos">Juegos</a> >> <strong>Juego de memoria</strong></p>
+    <main>
+        <script>
+            const memoria = new Memoria();
+        </script>
+        <h2>Juego de memoria</h2>
+        <article onclick=memoria.flipCard(this)>
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/honda.svg" alt="Logo-Honda" />
+        </article>
+        <article onclick=memoria.flipCard(this)>
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/honda.svg" alt="Logo-Honda" />
+        </article>
+        <article onclick=memoria.flipCard(this)>
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/yamaha.svg" alt="Logo-Yamaha" />
+        </article>
+        <article onclick=memoria.flipCard(this)>
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/yamaha.svg" alt="Logo-Yamaha" />
+        </article>
+        <article onclick=memoria.flipCard(this)>
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/ducati.svg" alt="Logo-Ducati" />
+        </article>
+        <article onclick=memoria.flipCard(this)>
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/ducati.svg" alt="Logo-Ducati" />
+        </article>
+        <article onclick=memoria.flipCard(this)>
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/ktm.svg" alt="Logo-KTM" />
+        </article>
+        <article onclick=memoria.flipCard(this)>
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/ktm.svg" alt="Logo-KTM" />
+        </article>
+        <article onclick=memoria.flipCard(this)>
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/aprilia.svg" alt="Logo-Aprilia" />
+        </article>
+        <article onclick=memoria.flipCard(this)>
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/aprilia.svg" alt="Logo-Aprilia" />
+        </article>
+        <article onclick=memoria.flipCard(this)>
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/motogp.svg" alt="Logo-MotoGP" />
+        </article>
+        <article onclick=memoria.flipCard(this)>
+            <h3>Memory Card</h3>
+            <img src="multimedia/logos/motogp.svg" alt="Logo-MotoGP" />
+        </article>
+    </main>
+    <footer>
+        <p>© MotoGP - Desktop | Software y Estándares para la Web (SEW), Curso 2025-2026 | Vicente Megido García (UO294013) - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
