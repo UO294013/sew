@@ -16,9 +16,9 @@ main article {
     color: #FFFFFF;
 }
 
-/* Regla con la transformación que permite girar la carta cuando se le pone el data-state al valor flip */
+/* Regla con la transformación que permite girar la carta cuando se le pone el data-estado al valor revelada */
 /* especificidad: 012 */
-main article[data-state=flip] {
+main article[data-estado=revelada] {
     transform: rotateY(180deg);
 }
 
