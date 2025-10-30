@@ -6,12 +6,13 @@
 main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto repeat(3, 1fr);
+    grid-template-rows: auto auto repeat(3, 1fr);
     gap: 1em;
 }
 
-/* Especificidad del selector: 002 */
-main h2 {
+/* Especificidad del selector: 002 | 002 */
+main h2,
+main p {
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 5;
@@ -23,11 +24,12 @@ main h2 {
     /* Especificidad del selector: 001 */
     main {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto repeat(6, 1fr);
+        grid-template-rows: auto auto repeat(6, 1fr);
     }
 
-    /* Especificidad del selector: 002 */
-    main h2 {
+    /* Especificidad del selector: 002 | 002 */
+    main h2,
+    main p {
         grid-column-start: 1;
         grid-column-end: 3;
     }
